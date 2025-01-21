@@ -522,6 +522,95 @@ body {
 }
 
 
+#footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.footer1 img{
+    margin-bottom: 10px;
+}
+
+.footer1 h6{
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+}
+
+.footer1 span{
+    color: #465b52;
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+
+
+.footer1 .footer1-icons a{
+    text-decoration: none;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.footer2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer2 h6{
+    font-size: 14px;
+}
+
+.footer2 span{
+    color: #465b52;
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+.footer3{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer3 h6{
+    font-size: 14px;
+}
+
+.footer3 span{
+    color: #465b52;
+    font-size: 12px;
+    padding: 5px 0 5px 0;
+    cursor: pointer;
+}
+
+.footer4 h6{
+    font-size: 14px; 
+}
+
+.footer4 span{
+    color: #465b52;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+}
+
+.footer4-apps img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #591420;
+    border-radius: 6px;
+}
+
+.footer4 img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
 
 
 
