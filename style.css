@@ -122,6 +122,23 @@ body {
 
 }
 
+#mobile{
+    display: none;
+    flex-direction: row;
+    
+}
+
+#mobile i{
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+#close{
+ display: none;   
+}
+
 /* home page */
 #hero{
     background-image: url('img/hero4.png');
@@ -223,6 +240,7 @@ body {
     flex-wrap: wrap;
     display: flex;
     gap: 20px;
+    margin-left: 50px;
 }
 
 .pro {
@@ -285,7 +303,7 @@ body {
 .cart{
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 40px !important;
     border-radius: 50px;
     color: #591420;
     background-color: #e8fae8;
@@ -549,7 +567,7 @@ body {
 
 .footer1 .footer1-icons a{
     text-decoration: none;
-    color: #1a1a1a;
+    color: #465b52;
     cursor: pointer;
 }
 
@@ -602,6 +620,7 @@ body {
     margin-bottom: 10px;
     border: 1px solid #591420;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .footer4 img{
@@ -609,6 +628,239 @@ body {
     margin-bottom: 10px;
 }
 
+#footer .copyright{
+    position: absolute;
+    color: #465b52;
+    font-size: 13px;
+    width: 500px;
+    margin-top: 250px;
+    left: 38%;
+    padding-bottom: 50px;
+}
+
+
+@media (max-width: 1024px) {
+    #hero{
+        background-position: top 25% right 30%;
+    }
+
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.03);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #mobile{
+        display: flex;  
+    }
+
+    #close{
+        display: block;   
+       }
+
+    #sm-banner .banner-box{
+        height: 30vh;
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .banner-box2{
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner3{
+        gap: 17px;
+    }
+
+    #banner3 .banner-sm1{
+        height: 14vh;
+        min-width: 250px;
+        padding-top: 30px;
+    }
+
+    #banner3 .banner-sm2{
+        height: 14vh;
+        min-width: 250px;
+        padding: 20px 0 0 10px;
+        background-position: center;
+    }
+
+    #banner3 .banner-sm3{
+        height: 14vh;
+        min-width: 250px;
+        padding: 20px 0 0 10px;
+        background-position:center;
+    }
+
+    .banner-sm1 h2{
+        font-size: 20px;
+    }
+
+    .banner-sm2 h2{
+        font-size: 14px;
+        width: 1000px;
+        max-width: 130%;
+    }
+
+    .banner-sm3 h2{
+        font-size: 18px;
+
+    }
+
+    #newsletter{
+        padding: 0 25px;
+    }
+
+    .newsInput button{
+        right: 10px;
+    }
+
+    .newsInput input{
+        width: 27em;
+    }
+
+    
+
+    
+
+
+    
+}
+
+@media (max-width: 477px) {
+
+    h2{
+        font-size: 32px;
+    }
+
+    h1{
+        font-size: 38px;
+    }
+    
+    #header{
+        padding: 20px 20px;
+    }
+    #hero{
+        padding: 0 5px;
+    }
+
+    #features .fe-box{
+        height: 159px;
+        width: 124px;
+        margin: 0 0 15px 0;
+        
+    }
+
+    .pro{
+        min-width: 195px;
+    }
+
+    #banner h4{
+        font-size: 12px;
+    }
+
+    #banner h1{
+        width: 197px;
+        font-size: 22px;}
+
+    #sm-banner .banner-box{
+        padding-left: 5px;
+    }
+
+    #sm-banner .banner-box2{
+        padding-left: 5px;
+    }
+
+    #sm-banner .banner-box2 h2{
+        font-size: 23px;
+    }
+
+    #banner3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #banner3 .banner-sm1{
+        padding-left: 5px;
+        height: 20vh;
+    }
+
+    .banner-sm1 h2{
+        max-width: 110%;
+        
+        
+    }
+
+    #banner3 .banner-sm2{
+        height: 20vh;
+        background-position: center;
+    }
+
+    #banner3 .banner-sm3{
+        height: 20vh;
+        background-position: center;
+    }
+
+    #newsletter{
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    #newsletter .newstext h4{
+        font-size: 16px;
+        margin-left: 83px;
+        margin-top: 15px;
+    }
+
+    #newsletter .newstext h5{
+        font-size: 12px;
+        width: 400px;
+    }
+
+    .newsInput button{
+        right: 24px;
+        width: 6em;
+        height: 2em;
+    }
+
+    .newsInput input{
+        width: 22em;
+        height: 2em;
+        margin-bottom: 20px;
+    }
+
+    #footer{
+        padding-left: 30px;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: none;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer1 img{
+        margin-left: 60px;
+    }
+
+    #footer .copyright{
+        display: none;
+    }
+}
 
 
 

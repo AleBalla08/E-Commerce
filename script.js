@@ -30,15 +30,32 @@ fetch(url)
                     <h4>$${product.price}</h4>
                 </div>
                 <a href="#"><i class="fa fa-cart-shopping cart"></i></a>`
-            
+
 
             container.appendChild(pro)
-            
+
         });
     })
     .catch(error => {
         console.log(error, 'erro')
     })
+
+
+const bar = document.getElementById('bar');
+const close = document.getElementById('close')
+const navbar = document.getElementById('navbar')
+
+if (bar) {
+    bar.addEventListener('click', () => {
+        navbar.style.right = '0px'
+    })
+}
+
+if (close) {
+    close.addEventListener('click', () => {
+        navbar.style.right = '-300px'
+    })
+}
 
 
 
